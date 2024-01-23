@@ -1,5 +1,3 @@
-// app.js (or server.js)
-
 const express = require("express");
 const cors = require("cors");
 const phonePePayment = require("./routes/index"); // Adjust the path accordingly
@@ -12,7 +10,7 @@ app.use(express.json());
 // Include other middleware and routes as needed
 
 // Include the PhonePe payment logic
-app.use(phonePePayment);
+app.use(phonePePayment); // This line is including your router
 
 // Start the server
 const PORT = process.env.PORT || 3001;

@@ -25,9 +25,9 @@ router.get("/pay", async function (req, res, next) {
     merchantTransactionId: tx_uuid,
     merchantUserId: "MUID123",
     amount: 10000,
-    redirectUrl: "http://localhost:3000/pay-return-url/",
+    redirectUrl: "https://65afac7cd916fd02bd4a0096--frntendprj.netlify.app/",
     redirectMode: "POST",
-    callbackUrl: "http://localhost:3000/pay-return-url/",
+    callbackUrl: "https://65afac7cd916fd02bd4a0096--frntendprj.netlify.app/",
     mobileNumber: "9999999999",
     paymentInstrument: {
       type: "PAY_PAGE"
